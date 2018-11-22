@@ -18,6 +18,7 @@ Pod::Spec.new do |s|
   # Directory glob for all Swift files
   s.source_files  = "Sources/*.{swift}"
   s.dependency 'Result', '~> 4.0'
+  s.static_framework = true
 
   s.pod_target_xcconfig = {"OTHER_SWIFT_FLAGS[config=Release]" => "$(inherited) -suppress-warnings" }
 
